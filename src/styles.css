@@ -1,1 +1,128 @@
 /* You can add global styles to this file, and also import other style files */
+::ng-deep ::-webkit-scrollbar {
+  display: none;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f5f7fa;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+/* .navbar {
+  background: #1e293b;
+
+  text-align: center;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+
+} */
+
+section {
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+
+  border-radius: 8px;
+}
+
+footer {
+  background: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+.navbar{
+    height: auto; 
+    /* background-color: rgb(0, 18, 37); */
+    background-color: #1e293b;
+    caret-color: transparent;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 15000;
+    padding: 24px 16px;
+  }
+
+  .navbar a{
+    position: fixed;
+  }
+  
+  .navbar p{
+    color: rgb(243, 243, 243);
+    margin: 15px;
+    font-weight: 300;
+    
+  }
+  
+  .navbar ul{
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    float: right;
+    right: 0;
+
+    
+  }
+
+  .navbar ul li{
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: small;
+  }
+
+  .navbar ul li:hover{
+    background-color: white;
+    color: black;
+    transition: 1s;
+    cursor: pointer;
+  }
+
+
+.digital {
+  color: #d24d57;
+  /* Gradient-like effect for 'Digital' */
+  background: linear-gradient(90deg, #d24d57, #00aaff);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: colorShift 3s infinite alternate ease-in-out;
+  background-clip: text;
+}
+
+
+  @media screen and (max-width: 900px){
+    nav ul{
+        display: none;
+    }
+    nav{
+      width: 100%;
+      position: fixed;
+      scroll-behavior:unset;
+    }
+  }

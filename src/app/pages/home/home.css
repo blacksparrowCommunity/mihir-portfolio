@@ -1,0 +1,118 @@
+.box {
+    width: 60%;
+  height: 100%;              /* adjust as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;    /* vertical center */
+  align-items: center;        /* horizontal center */
+  text-align: center;         /* center text */
+  position: absolute;
+  right: 0%;
+}
+
+
+.box h1{
+    font-size: 68px;
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+
+.typewriter h1 {
+    overflow: hidden;
+    border-right: .15em solid rgb(95, 202, 255);
+    white-space: nowrap;
+    margin: 0;
+    letter-spacing: .19em;
+    animation:
+        typing 1.5s steps(30, end),
+        blink-caret 1s step-end infinite;
+}
+
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: rgb(0, 122, 182)
+    }
+}
+.picbox {
+  width: 40%;
+  position: fixed;
+  left: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0f172a;
+}
+
+/* SVG text style */
+.text {
+  font-size: 64px;
+  font-weight: 800;
+  fill: none;
+  stroke: rgb(95, 202, 255);
+  stroke-width: 2;
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  animation: draw 6s linear infinite;
+  opacity: 0;
+  display: inline;
+}
+
+/* Timing per word */
+.text1 {
+  animation-delay: 0s;
+}
+.text2 {
+  animation-delay: 0s;
+}
+.text3 {
+  animation-delay: 0s;
+}
+
+/* Stroke animation */
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 300;
+    opacity: 1;
+  }
+  40% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    stroke-dashoffset: 300;
+    opacity: 0;
+  }
+}
+
+
+  @media screen and (max-width: 900px){
+    .box{
+        display: none;
+    }
+    .picbox{
+        width: 100%;
+    }
+  }
