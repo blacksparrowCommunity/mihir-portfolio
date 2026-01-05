@@ -1,3 +1,7 @@
+::ng-deep ::-webkit-scrollbar {
+  display: none;
+}
+
 .skills-section {
   padding: 80px 60px;
   background: #ffffff;

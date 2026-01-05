@@ -1,3 +1,8 @@
+
+::ng-deep ::-webkit-scrollbar {
+  display: none;
+}
+
 .about-section {
   padding: 80px 60px;
   background: #ffffff;
