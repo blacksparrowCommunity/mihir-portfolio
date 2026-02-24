@@ -1,9 +1,0 @@
-{
-  "routes": {
-    "/mihir-portfolio": {},
-    "/mihir-portfolio/about": {},
-    "/mihir-portfolio/contact": {},
-    "/mihir-portfolio/projects": {},
-    "/mihir-portfolio/skills": {}
-  }
-}
